@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="heading1">Welcome to the Dom Intro </h1>
+    <input type="text" id ="username">
+    <button id = "clickbutton" onclick="f1()">Click me</button>
+   <h1 class = "group1">Anoter Heading</h1>
+   <p class = "group1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, aspernatur!</p>
+
+    <script>
+
+function f1(){
+var i = document.getElementById("username");
+// alert(i)
+var h = document.getElementsByTagName("h1")
+// alert(h[2])
+var g1 = document.getElementsByClassName("group1")
+alert(g1[1].tagName)
+g1[0].innerHTML = "Welcome to the Students in this amazing class"  //change inner html
+alert(g1[0].innerHTML)
+
+g1[0].style.color = "red"; // chANge propertiy of perticuler element
+g1[1].style.backgroundColor = "yellow";
+
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var x = 3/4
+document.write("<h1> x = "+x+"</h1>");
+
+var y = 4**3
+document.write("y="+y)
+document.write("y="+ ++y)
+++x;
+document.write("<h1> x = "+x+"</h1>");
+x++;
+document.write("<h1> x = "+x+"</h1>");
+--x;
+document.write("<h1> x = "+x+"</h1>");
+
+
+// identity operator
+var x = 5=="5";//result will be true , it not consider type it only consider value
+document.write("<h1> x = "+x+"</h1>");
+
+var x = 5==="5";
+document.write("<h1> x = "+x+"</h1>");
+
+
+// every non zero value is considered as true
+var x = 5 && 34; // result will be 34 because it depend on it
+document.write("<h1> x = "+x+"</h1>");
+var x = 0 && 32 ;//result will be 0 , because it not depend on 32
+document.write("<h1> x = "+x+"</h1>");
+
+var x = 3||6;//result will be 3, because it not depend on 6
+document.write("<h1> x = "+x+"</h1>");
+
+var x = 0||43;//result will be 43 , because it depend on it
+document.write("<h1> x = "+x+"</h1>");
+
+
+z = x>y ? x:y;
+document.write("<h1> x = "+z+"</h1>");
+</script>
+
+</body>
+</html>

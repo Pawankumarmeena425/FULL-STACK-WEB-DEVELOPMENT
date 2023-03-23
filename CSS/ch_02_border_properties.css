@@ -1,0 +1,21 @@
+h1{
+    border-style: solid ;
+    /* border-left-style: solid; 
+    border-top-style: ridge;
+     border-bottom-style: dashed; */
+
+    
+    /* border-color: rgb(37, 123, 198);
+    border-width: 10px;
+    border-radius: 10px; */
+
+/* how to combine various properties */
+border : 5px solid rgb(9, 9, 9);
+border-radius: 10px;
+text-align: center;
+background-color: aquamarine;
+}
+p
+{
+background-color: aqua;
+}

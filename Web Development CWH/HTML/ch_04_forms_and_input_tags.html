@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Form Tutorial</h2>
+    <form action="backend.php"></form>
+    <!-- action attribute use for store information , it takes files names for backend -->
+    <div>
+        Name : <input type="text">
+    </div>
+    <!-- Two way for new line :
+1 . Using br tags . But br is not recommanded
+2. Using div tags  -->
+    <br>
+    <div>
+        Role : <input type="text" name="myRole" id="">
+    </div>
+    <br>
+
+    <label for="email_id">Email : </label>
+    <input type="email" name="myEmail" id="email_id">
+    <!-- when we use lable, and when we take curser to Field name , then curser automaticlly goes to the typing box -->
+    <br>
+    <br>
+    <div>
+        Data : <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Bonus : <input type="number" name="myBonus">
+    </div>
+    <br>
+    <div>
+        Are you Eligible ? : <input type="checkbox" name="mycheckbox">
+    </div>
+    <br>
+    <div>
+        Gender : Male <input type="radio" name="myGender" id="" checked>Female <input type="radio" name="myGender">
+        other <input type="radio" name="myGender">
+        <!-- we only able to select one out of them , if we give name attribute different for different input types , then we will be able to select multiple attributes -->
+    </div>
+    <br>
+    <div>
+        Write About Yourself : <br><textarea name="myText" id="" cols="70" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="car">Car </label>
+        <select name="myCar" id="car">
+            <option value="Indica" >Indica</option>
+            <option value="" selected>Swift</option>
+            <option value="">fortuner</option>
+            <option value="">farari</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <br>
+    <input type="reset" value="Reset Now">
+</body>
+
+</html>

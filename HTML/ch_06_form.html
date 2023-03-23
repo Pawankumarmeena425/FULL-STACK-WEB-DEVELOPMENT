@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="" method ="post">
+        <!-- problem with get method is , it show it content in the url so password deatils display in the url tabs -->
+           Name<input type="text" value ="Anonymous"><br> 
+           <!-- value attritubes are use to prefilled content in the pages , it can change -->
+           Mobile<input type="text"><br>
+           <!-- br tags use for new line -->
+           Email<input type="text"><br>
+           <input type="color">
+           Gender <input type="radio" name = "gender">M 
+           <input type="radio" name ="gender">F <br>
+           <!-- radio button use for single selection -->
+           <!-- now select out of both -->
+          password <input type="password" name="pwd" id="pwd"><br>
+          which is correct<input type="checkbox" name="" id=""><br>
+          <!-- for multiselection use checkbox -->
+           <input type="submit" value="Register"> <br>
+           <input type="submit" value="Register" disabled> <br>
+<!-- content show but it disabled -->
+           Time <input type="time" name="" id="">
+         Date  <input type="date" name="" id=""><br>
+        <input type="hidden" name="" value="k =32424">   
+        <!-- value goes in the form of hidden , no deatils show on the pages -->
+        
+        City Name <select name="" id="">
+    <option value="a">Jaipur</option>
+    <option value="b">bhopal</option>
+    <option selected value="c">Patna</option>
+    <!-- by default patna is selected as it in the selected attributes -->
+    <option value="d">Kanpur</option>
+    <option value="e">Mumbai</option>
+        </select><br>
+
+        <textarea name="" id="" cols="50" rows="10"></textarea><br>
+
+        <label >
+            Name<input type="text" value ="Anonymous">  
+            <!-- when we take currser on it fields it allow cursor in the box for type automatically -->
+<!-- implicit labling -->
+        </label>
+
+
+        <label for="mobile">Mobile</label>
+        <input type="text" id = "mobile">
+        <!-- Explicit labling -->
+    </form>
+</body>
+</html>

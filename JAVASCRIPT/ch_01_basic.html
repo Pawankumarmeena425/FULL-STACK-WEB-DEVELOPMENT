@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+    
+<script>
+var x=34;
+document.write(x+" "+typeof(x))
+
+var y=342234234242424424242424;
+y = y+34;
+document.write(y+" "+typeof(y))
+// but this give wrong result when number is big ,so use BigInt
+
+var z = BigInt(234423242342423423423);
+z = z+BigInt(34)
+document.write(z+" "+typeof(z))
+
+
+var x;
+Document.write(x+" "+typeof(x))
+</script>
+
+
+<script>
+
+    var str = "hello";
+    document.write(str+" "+typeof(str))
+
+
+    var val = null
+    document.write(val+" "+typeof(val))
+
+    var x = Symbol("hello");
+    document.write(typeof(x));
+
+    var y = Symbol("hello");
+    document.write(x==y)//it will give result false , as symbol always create a new objects
+
+var x = {a:2,b:5,c:6}  //create object without creatiing class
+document.write(x.a+" "+x.b+" "+" "+x.c+" "+typeof(x));
+</script>
+</body>
+</html>

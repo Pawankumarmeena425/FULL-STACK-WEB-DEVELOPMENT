@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write("We are studing to the functionC!!")
+        function f1(x,y)
+        {
+            var z = x+y //z is local varialbe
+            a = x*y //global variable
+            document.write(" <br> sum of x and y is : "+ (x+y))
+            return "successful run"
+        }
+        f1()
+        b = f1(2,98)
+        document.write("<br>"+b)
+        document.write("<br>multiply of both numbers "+a)
+        // document.write(z)
+        f1()
+
+        var p1 = {
+            firstName : "Dilip",
+            lastName : "Souner",
+            age : 24,
+            editAge : function(age){this.age = age}
+        }
+
+        p1.editAge(324)
+        document.write("<br>Person Data <br> ")
+        document.write(p1.firstName + " "+ p1.lastName +" "+" "+p1.age)
+    </script>
+</body>
+</html>

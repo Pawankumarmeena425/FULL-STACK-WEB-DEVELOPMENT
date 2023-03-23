@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="ch_03_box_properties.css">
+    <style>
+    #d1{
+
+        border : 5px solid red;
+        height:100px;
+/* height is box height */
+padding: 10px;   
+/* padding apply on the content  */
+margin: 30px;
+/* margin is outside the box */
+
+    }
+    #d2{
+        border  : 5px solid green;
+        height : 100px;
+       width : 200px;
+       margin: 10px;
+       padding: 20px;
+       display:table-cell;
+    }
+    #d21,#d22{
+        border: 5px solid rebeccapurple;
+        height: 30px;
+        width: 23px;
+
+    }
+
+
+a{
+    border : 5px solid orange;
+    margin-bottom: 20px; /*no applicable */
+    width: 200px;
+    height: 50px;
+    margin-right: 30px; /*applicable*/
+
+/* convert properties inline to block , after block all properties are applicable */
+display: block;
+}
+    </style>
+</head>
+<body>
+    <div id = "d1">
+This a  box
+    </div>
+
+    <div id = "d2">
+
+<div id = "d21">
+
+</div>
+<div id ="d22">
+
+</div>
+    </div>
+
+    <a href="https://mysirg.com">My website</a>
+    <!-- inline tegs don't seperate new line -->
+    <a href="https://shaurabhshuklaclasses.com">this is my class section</a>
+
+
+
+    </body>
+</html>

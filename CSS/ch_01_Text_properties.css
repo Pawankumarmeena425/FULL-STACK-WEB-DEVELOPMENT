@@ -1,0 +1,40 @@
+body{
+    background-image: url('A.png.jpeg');
+    /* by default image repeat in the entire page */
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+}
+
+h1{
+
+    /* color:rgb(219, 64, 29) */
+    
+    color:#1f241f; /* through hex code */
+    text-align: center;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    letter-spacing: 20px;
+    background-color: rgb(160, 243, 137);
+    
+}
+p{
+    color: rgb(33, 191, 219);
+    text-align: right;/* it care about align text in the right side,no care about left , by default it is alight through left */
+    text-align: center;
+    text-align: justify;
+    /* justify align both sides left and right */
+    text-indent: 50px;
+    line-height: 30px;
+    word-spacing: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    
+}
+
+a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
