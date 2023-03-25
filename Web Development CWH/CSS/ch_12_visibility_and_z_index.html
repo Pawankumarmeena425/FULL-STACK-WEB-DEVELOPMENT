@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+
+    <style>
+.box{
+    width: 170px;
+    height: 170px;
+    border: 3px solid black;
+}
+#box1{
+    /* display: none; */
+    /* display none me space and element dono hide ho jate hai */
+    background-color: blue;
+}
+#box2{
+
+    position: relative;
+    top: 45px;
+    /* z-index will work only for position : relative , absolute , fixed or sticky ;  */
+    /* jiska z-index jitna jayada hoga wo index utna hi uper dikega */
+    z-index: 34;
+    background-color: rgb(255, 0, 0);
+}
+#box3{
+    /* visibility: hidden; */
+    /* hide content and element but will reserve it place */
+
+    position: relative;
+    top: 5px;
+    z-index: 36;
+    background-color: rgb(155, 155, 180);
+}
+#box4{
+    background-color: rgb(26, 255, 0);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- div.box#box$*4 , id will be named with 1,2 ,3, 4... -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
