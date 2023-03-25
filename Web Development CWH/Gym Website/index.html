@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("Images/gym_back.jpg");
+            font-family: 'Alkatra', 'cursive';
+        }
+
+        /* Left Properties */
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 4px;
+            /* border: 3px solid red; */
+            text-align: center;
+        }
+
+        .left img {
+            width: 120px;
+        }
+
+        .left h4 {
+            text-align: center;
+            margin: -12px;
+            font-size: 30px;
+        }
+
+
+        /* Mid Properties for navbar */
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 13px auto;
+            /* border: 3px solid blue; */
+
+
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: red;
+            /* text-decoration: none;
+            margin: 20px;
+            font-size: 25px; */
+        }
+
+        /* Right Properties for contact section */
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 23px;
+            top: 13px;
+            /* border: 3px solid yellow; */
+
+        }
+
+        .btn {
+            font-weight: bold;
+            background-color: lightcyan;
+            margin: 9px 17px;
+            padding: 9px 41px;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Alkatra', 'cursive';
+        }
+
+
+
+        .btn:hover {
+            background-color: gray;
+            color: rgb(216, 29, 29);
+        }
+
+        .container {
+            border: 3px solid pink;
+            margin: 149px 45px;
+            padding: 10px 73px;
+            border-radius: 20px;
+            width: 33%;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            /* margin: auto; */
+            width: 68%;
+            padding: 7px 78px;
+            margin: 16px 42px;
+            font-size: 25px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 94%;
+            margin: 2px 40px;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Images/logo.png" alt="">
+            <h4>Fitness Coach</h4>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="" id="">Home</a></li>
+                <li><a href="#" class="" id="">About Us </a></li>
+                <li><a href="#" class="" id="">Fitness Calculator</a></li>
+                <li><a href="#" class="" id="">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join the Best GYM in Jodhpur Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Geneder">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Email Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

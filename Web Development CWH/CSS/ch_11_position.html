@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid pink;
+            height: 3000px;
+            background-color: aqua;
+        }
+
+        .box {
+            display: inline-block;
+            border: 5px solid rgb(226, 22, 22);
+            margin: 5px;
+            height: 150px;
+            width: 150px;
+        }
+
+        /* Css Position : static(by default) , relative  , absolute, fixed , sticky */
+        #box3 {
+            /* relative : relative to its normal position and will leave gap at its normal position */
+            /* position: relative; */
+            /* absolute : relative to the position of its first parent */
+            /* position: absolute; */
+            /* top: 34px;
+            left: 50px; */
+
+            /* fixed : position the element relative to the browser window*/
+    /* position: fixed;
+    right: 10px;
+    bottom: -5px;
+    width: 200px;
+    height: 13px;
+    padding: 18px 628px; */
+
+    /* sticke : chip kar rh jayegi */
+    position: sticky;
+    top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us
+            <!-- <input type="text" name="" id=""> -->
+        </div>
+        <div class="box" id="box4">4</div>
+
+    </div>
+
+</body>
+
+</html>
