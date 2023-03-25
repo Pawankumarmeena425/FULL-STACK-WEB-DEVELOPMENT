@@ -14,7 +14,7 @@
 
     <style>
         .container {
-            height: 300px;
+            height: 500px;
             width: 100%;
             border: 3px solid red;
             display: flex;
@@ -34,10 +34,10 @@
             flex-wrap: wrap;
 
 
-            /* Shortcut for flex-direction and flex-wrap at a time */
+            /* ****************Shortcut for flex-direction and flex-wrap at a time********************* */
             /* flex-flow: row-reverse wrap; */
 
-            /* content will be in the center */
+            /* justify -  content will justify content in the horizontal direction*/
             justify-content: center;
             /* space between all element equal , not in the side */
             justify-content: space-between;
@@ -46,6 +46,13 @@
             /* space-around , kisi bhi dibbe ke left or right dono me space barabar hoga */
             justify-content: space-around;
 
+            /* align items will align content in the vertical direction */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            /* Stretch properties is use to set element in the page for responsive */
+            align-items: stretch;
+
         }
 
         .item {
@@ -53,7 +60,42 @@
             border: 2px solid blue;
             margin: 15px 5px;
             padding: 5px 2px;
-            width: 200px;
+            width: 180px;
+            height: 50px;
+
+        }
+
+        #item-1 {
+            /* Flex properties for flex item */
+
+            /* jiska jayada order value hoga wo sabke last me jayega
+            Higer the order, later it shows up in the container */
+            /* order: 2;    */
+
+            flex-grow: 2;
+        }
+
+        #item-2 {
+            /* flex - grow ki value jitni jayada hogi, wo jaise hi ushe space milge page me jo jayada grow hoga */
+            flex-grow: 3;
+            flex-shrink: 3;
+            /* flex-shrink ki value jitni jayada hogi, wo utna shrank / small hoga jab size choti hogi page ki */
+
+
+            flex-basis: 250px;
+            /* when flex-direction is set to row flex-basis : will control width */
+            /* when flex-direction is set to column flex-basis : will control height */
+        }
+
+        #item-3 {
+            /* order: 40 ; */
+            /* shortcut for flex grow , flex shrink and flex basis */
+            flex: 4 2 344px;
+
+
+            align-self: start;
+            align-self: flex-end;
+            align-self: center;
         }
     </style>
 </head>
@@ -65,9 +107,9 @@
         <div class="item" id="item-1">First Box</div>
         <div class="item" id="item-2">Second Box</div>
         <div class="item" id="item-3">Third Box</div>
-        <div class="item" id="item-4">Fourth Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
         <div class="item" id="item-5">Fifth Box</div>
-        <div class="item" id="item-6">Six Box</div>
+        <div class="item" id="item-6">Six Box</div> -->
     </div>
 </body>
 

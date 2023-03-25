@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Size Units</title>
+    <!-- 
+        Responsive Design : Responsive Design is a way for a web developer to make his website adapt to all the devices and resolutions
+        Responsive Design is a necessity and not a luxuru anymore.
+
+        Various ways to achieve responsive Design : 
+        1. Setting up the viewport
+        2. Use max-widht/max-height
+        3. Using CSS media Queries 
+        4. Using rem/vh/vw units over pixels
+ -->
+
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            /* width: 400px;
+        height: 344px; */
+            height: 100vh;
+            /* 100vh means it take complete height of view page */
+            width: 100vw;
+            /* 100vw means it take complete width of view page */
+/* It will compupte widht and height in pixels according to the page size .  So it is better way for using the units
+It is similer to the percentage
+ */
+
+            font-size: 10px;
+            border: 3px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* em Units :: */
+            /* font-size: 3em; */
+            /* em units means : parent font size * give font size (pixel) */
+            /* padding: 3em; */
+            /* in padding : font size in pixels * give size in em */
+
+        }
+
+        #second {
+            /* rem units : it change size relavent to the it html page font size*/
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="first">This is a first heading</h1>
+        <h1 id="second">This is a second heading</h1>
+        <h1 id="third">This is a third heading</h1>
+
+    </div>
+</body>
+
+</html>
