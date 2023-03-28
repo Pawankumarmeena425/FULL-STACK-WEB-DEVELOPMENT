@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals Statements</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1 = "this is a string";
+        var string1  = "this is a string2";
+        console.log(string1);
+        // let scope is a block scope. and it is recommanded to use the let keyword for variable declaration , so that don't do duplicate initlize
+        let a = "u";
+        {
+            let a = "this is inside block"
+            console.log(a);
+        }
+        console.log(a);
+        // Constant
+        const b = "This cannot be changed";
+        console.log(b);
+        // b = "I wnat to change cont. This cann't be changed";
+        // console.log(b);
+
+
+
+        // Conditional ::
+        let age = 43;
+        if(age>18){
+            console.log("You can drive ");
+        }
+        else if(age==18){
+            console.log("Your age is 18 . You can also drive");
+        }
+        else{
+            console.log("You can't drive ");
+        }
+
+        // Swith case statement
+        const cups = 34;
+        switch(cups){
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+            case 23:
+                console.log("the value of cups is 23");
+                break;
+            default:
+                console.log("value don't match to any ")
+                break;
+        }
+
+    </script>
+</body>
+</html>

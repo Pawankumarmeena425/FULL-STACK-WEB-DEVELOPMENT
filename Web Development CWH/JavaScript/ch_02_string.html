@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quo esse suscipit sapiente aut tempore fuga voluptates ipsa deleniti saepe alias voluptatibus nesciunt incidunt ex fugiat, velit omnis laboriosam at minima veritatis ratione quas? Esse provident deleniti libero fugit eaque repellendus vitae enim nam error dolorem, veritatis nobis quaerat quae.</p>
+    </div>
+
+    <script>
+        var String = "this is string";
+        var str = 'this is also a string . that"s is vary good'
+        var str2 = "this is'a string"
+        console.log(String)
+        console.log(str)
+        console.log(str2)
+        console.log(String+str+str2);
+
+        var name = "pawan";
+        var channel = "code with harry";
+        var temp  = `${name } is a nice 'person" and he has a channel name called ${channel}`;//fill in the blank access
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        console.log("Hellow world\n Harry \t is a tab \\ is a backlash ")
+        // var y = new String("This is string using string constructure");
+        // console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3> this is an h3 heading </h3>' 
+    </script>
+</body>
+</html>
