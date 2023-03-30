@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert in in-browser JavaScript - does not return anything
+    //    let a  =  alert("This is a message");
+    //    console.log(a);
+
+    // Prompt in Js
+    // let name = prompt("What is your name ?","Guest");  // it is not mandatory to give default argument
+    // console.log(name);
+
+    let deletePost = confirm("Do you really want to delete this post");
+    if(deletePost){
+        console.log("Your post has been deleted successfully");
+    }
+    else{
+        console.log("Your post has not been deleted")
+    }
+    </script>
+</body>
+</html>

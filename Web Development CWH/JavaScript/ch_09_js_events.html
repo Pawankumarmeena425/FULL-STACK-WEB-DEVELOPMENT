@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+
+    <style>
+        #btn{
+            padding: 11px 10px;
+            color: red;
+            border: 2px solid rebeccapurple;
+            background-color: aqua;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser events :
+    Click
+    contentmenu
+    mouseover/mousout
+    mousedown / mouseup
+    mousemove
+    
+    submit
+    focus
+
+    DOMContentLoaded
+    transitioned -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur excepturi atque enim quaerat nobis accusamus, placeat, temporibus distinctio tempora obcaecati eos dolorem doloribus ullam ab quo consequatur nostrum, minima fugiat minus. Quae, facilis ad rem laborum neque deserunt animi accusamus sit omnis obcaecati repellendus harum, consequuntur, magni dolorem sunt. Consequatur provident ipsa eveniet excepturi id ipsum dicta! Perspiciatis accusamus eveniet eligendi possimus veniam sunt neque. Temporibus fugit minus voluptate alias sit nostrum et animi aliquid, autem ex corrupti eligendi consequuntur dicta cupiditate harum atque commodi, consectetur earum libero? Exercitationem fugiat numquam ipsam! Quasi at facilis porro sequi dolorem mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non qui magnam aperiam numquam facere totam. Dignissimos eos reprehenderit rem temporibus quisquam. Recusandae temporibus mollitia ullam dolorum distinctio laboriosam minus sit magnam! Ipsum quod incidunt, iure quaerat sapiente vel sint consectetur excepturi saepe impedit tempora vitae corporis aliquid explicabo quo similique harum. Esse aliquam nisi nulla earum delectus ea blanditiis incidunt ad nesciunt magnam expedita ipsum quibusdam sint, qui quod non officiis, ratione, architecto sunt provident. A, aperiam placeat ipsum quaerat provident corporis dolor rem sunt nulla eum inventore, necessitatibus nostrum quod totam in. Ducimus quae enim quos eos nulla!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    
+    <script>
+     let para = document.getElementById('para');
+    //  when mouse whell go in the paragraph it show
+        para.addEventListener('mouseover',function run(){
+            // alert("Mouse Inside the paragraph");
+            console.log('Mouse Inside the paragraph');
+        });
+
+        // 
+        para.addEventListener('mouseout',function run(){
+            // alert("Mouse now went outside");
+            console.log("outside the paragraph");
+        });
+function toggleHide(){
+    let btn = document.getElementById('btn');
+    let para = document.getElementById('para');
+    if(para.style.display!='none'){
+        para.style.display = 'none';
+    }
+    else{
+        para.style.display = 'block';
+
+    }
+}
+    </script>
+</body>
+</html>
