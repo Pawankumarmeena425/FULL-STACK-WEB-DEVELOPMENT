@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,48 @@
     <title>More on Selectors</title>
 
     <style>
-h1{
-    background-color: red;
-    color: black;
-    text-align: center;
-}
+        h1 {
+            background-color: red;
+            color: black;
+            text-align: center;
+        }
 
-/* div ke ander kahi bhi paragraph hoga to apply hogi properties */
-div p{
-    color: yellow;
-    font-weight: bold;
-    background-color: aqua;
-}
-/* if p is contained by any li which is contained by div */
-div li p{
-    color: white;
-}
+        /* div ke ander kahi bhi paragraph hoga to apply hogi properties */
+        div p {
+            color: yellow;
+            font-weight: bold;
+            background-color: aqua;
+        }
 
-/* ye properties div ke direct child par hi apply hogi */
-/* if p is right inside div then this css will be applied */
-div > p{
-    color: pink;
-    background-color: blue;
-}
+        /* if p is contained by any li which is contained by div */
+        div li p {
+            color: white;
+        }
 
-/* ye properties  us paragraph par apply hogi jiska just pichla sibling div hoga */
-/* if p is right after div  id i.e p is the next sibling of div */
-div + p{
-    color: black;
-    background-color: bisque;
-}
+        /* ye properties div ke direct child par hi apply hogi */
+        /* if p is right inside div then this css will be applied */
+        div>p {
+            color: pink;
+            background-color: blue;
+        }
 
+        /* ye properties  us paragraph par apply hogi jiska just pichla sibling div hoga */
+        /* if p is right after div  id i.e p is the next sibling of div */
+        div+p {
+            color: black;
+            background-color: bisque;
+        }
     </style>
 </head>
+
 <body>
     <h1>This is more on Selectors</h1>
     <div class="container">
         <div class="row">
             <ul>
-                <li> <p>this is anoter paragraph inside li</p></li>
+                <li>
+                    <p>this is anoter paragraph inside li</p>
+                </li>
             </ul>
             <p>This is a paragraph</p>
         </div>
@@ -53,4 +57,5 @@ div + p{
     </div>
     <p>This is outermost paragraph</p>
 </body>
+
 </html>

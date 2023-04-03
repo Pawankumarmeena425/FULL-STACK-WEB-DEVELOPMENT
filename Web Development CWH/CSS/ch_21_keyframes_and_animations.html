@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames and Animations</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: red;
+            /* align -items is used to center content in the vertical */
+            align-items: center;
+            /* justify-content is used to center content in the horizontl */
+            justify-content: center;
+            height: 500px;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            /* animation-name: harry1; */
+            animation-name: pawan;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: forwards; */
+            /* forwards mode se transiiton to wali width tk jakar whi par set ho jayega, apni initial position par nahi aayega. 'alternate' se apni inition positon par aa jayega */
+            /* animation-timing-function: ease-in; */
+            /* 'ease-in ' me suru me slow hoga , fir fast hoga trinsition . 'ease-out ' is just opsoite .
+            'ease-in-out' me suru me slow , fir fast, fir last me slow hoga */
+
+            /* animation-delay: 5s; */
+
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+
+
+            /* shortway for animation */
+            /* animation: animation-name animation-duration animation-timing-function animation -delay animation-iteration-count animation-fill-mode; */
+            animation: harry1 5s ease-in 1s 14 backwards;
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        @keyframes pawan {
+            0% {
+                top: 0px;
+                left: 0px
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

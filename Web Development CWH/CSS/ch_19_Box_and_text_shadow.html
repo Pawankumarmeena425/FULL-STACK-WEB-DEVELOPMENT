@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 23px;
+        /* border: 2px solid red; */
+        background-color: aliceblue;
+        box-shadow: 10px 23px green;
+        /* if we want to give shadow on top left then use negative */
+
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur - radius spread-redius color; */
+
+        box-shadow: -10px -23px green;
+        box-shadow: 10px 12px 56px pink;
+        /* blur radius propertiy */
+        box-shadow: -4px 12px 30px 43px crimson;
+        /* spread radius Property */
+
+        box-shadow: -4px 12px 30px 43px rgba(139, 139, 197, 1);
+        /* IN rgba , alpha is use to darkness of color */
+
+        /* box-shadow: inset 3px 5px gray; */
+        /* Shadow inside box */
+
+        /* box-shadow: 23px 32px burlywood , 76px 43px 34px pink;  */
+        /* Multiple box shadow at a time */
+    }
+
+    .card h2 {
+        text-shadow: 4px 5px 5px rgb(142, 135, 135);
+        /* all properties are same as box shadow */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This sis a C++ course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quibusdam pariatur iure veritatis illum,
+                non harum magnam aut quos in. Cumque nulla provident et cupiditate tenetur ex dolorum ipsa voluptatem
+                corporis nostrum quisquam ratione, non eius expedita? Quibusdam, tempora illum.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quibusdam pariatur iure veritatis illum,
+                non harum magnam aut quos in. Cumque nulla provident et cupiditate tenetur ex dolorum ipsa voluptatem
+                corporis nostrum quisquam ratione, non eius expedita? Quibusdam, tempora illum.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is web Development Course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quibusdam pariatur iure veritatis illum,
+                non harum magnam aut quos in. Cumque nulla provident et cupiditate tenetur ex dolorum ipsa voluptatem
+                corporis nostrum quisquam ratione, non eius expedita? Quibusdam, tempora illum.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
