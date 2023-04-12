@@ -1,0 +1,38 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+/* Home section */
+#home{
+
+}
+
+/* Services Sections */
+#services{
+    flex-direction: column;
+    padding: 23px;
+}
+#services .box img {
+    height: 80px;
+}
+
+.services-container {
+    flex-direction: column;
+}
+/* Clients Sections */
+.clients {
+ 
+    flex-wrap: wrap;
+}
+
+/* Contact Us Section  */
+
+
+/* Footer */

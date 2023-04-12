@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Property</title>
+
+    <style>
+        .container {
+            width: 300px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+          
+        }
+        #red{
+            background-color: red;
+             /* relative position will work relative to the parents */
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+        #green{
+            background-color: green;
+            /* absolute work with respect to the root element (html pages) */
+            /* absolute us parnets ke respect me kam karta hai jisne apni position ko relative bana rkhi hai */
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        #blue{
+            background-color: blue;
+            /* fixed property work with respect to root element */
+            /* position: fixed;/ */
+            /* right: 50; */
+        }
+        #pink{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="red"></div>
+        <div class="box" id="green"></div>
+        <div class="box" id="blue"></div>
+        <div class="box" id="pink"></div>
+    </div>
+</body>
+
+</html>
