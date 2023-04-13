@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'foot foot  foot foot';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(162, 255, 0);
+
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'foot foot  foot foot';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(144, 0, 255);
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'foot foot  foot foot';
+            }
+          
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: rgb(21, 219, 245);
+            }
+          
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 23px;
+            background-color: aquamarine;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: foot;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>
+                Home
+            </span>
+            <span>
+                About
+            </span>
+            <span>
+                Contact Us
+            </span>
+            <span>
+                Services
+            </span>
+              
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nam cupiditate? Possimus aspernatur animi ratione cupiditate quia exercitationem soluta magnam, aliquid voluptatum ad praesentium sapiente culpa quod sit laborum qui odio quis natus repudiandae placeat doloremque eos eum. Vitae a molestiae temporibus sint velit, illo dolores voluptatibus aspernatur pariatur eum? Amet dolore at, iste necessitatibus velit error aspernatur autem praesentium molestiae harum sapiente voluptatibus culpa, in, quis est quaerat voluptate corporis libero. Perferendis necessitatibus quod aliquam aut sunt inventore. Magni, libero, ex atque ratione, voluptatem itaque unde odit corrupti totam ea quos maxime nihil similique sunt magnam voluptate. Aperiam, eveniet.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt corporis, nisi nesciunt architecto voluptate cum hic magni non officia maxime velit, placeat laborum iusto dolorem, assumenda quam omnis dolor sint vitae expedita illum maiores. Modi nemo error, vero culpa dolor quibusdam perferendis pariatur voluptatum non. Laborum, commodi. Eum, maiores!</p>
+        </aside>
+    </div>
+    <footer class="bdr">Copywright CodeWithHarry 2020</footer>
+</body>
+
+</html>
