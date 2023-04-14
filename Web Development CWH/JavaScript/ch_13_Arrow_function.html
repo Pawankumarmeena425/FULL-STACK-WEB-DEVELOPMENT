@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow function Tutorial.
+    </div>
+
+    <script>
+        // function greet() {
+        //     console.log('Good Morning');
+        // }
+        // greet();
+
+
+        // Arrow Function(Shorthand of function)
+        let greet = () => console.log('Good Morning Pawan'); // If no arguments there, there must be parnathesis
+
+        greet();
+
+        // where to use
+        setTimeout(() => {
+            console.log("We are inside set timeout")
+        }, 3000)
+
+
+        let sum = (a, b) => {
+            return a + b;
+        };
+        console.log(sum(4, 5))
+
+        // another    shortcut
+        let sum2 = (a, b) => a + b;
+        console.log(sum2(54, 23));
+        let half = a => a / 2;//but for more than 1 arguments, require paranthesis
+        console.log(half(243));
+
+
+
+        let obj1 = {
+            greeting:"Good Morning",
+            names: ["Harry", "Rohan", "SkillF", "Djkhiladi"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " Kukadoo koo " + student);
+                    // But if we use normal function insted of arrow function , it will point to inner function variable , not outside . It is power of arrow function
+                    // It is called lexical this 
+                })
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

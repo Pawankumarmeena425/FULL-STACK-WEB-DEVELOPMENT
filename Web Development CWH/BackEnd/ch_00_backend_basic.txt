@@ -1,0 +1,20 @@
+How Website Work ?
+client request for the website (using browser) -->>>
+-->>> Server returns the response (from web Server)
+
+What  is NODe.JS ?
+1. Node.Js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+2. Node.js is designed to build scalble network applications.
+3. Node.js can be downloaded from the official Node.Js web site : https://nodejs.org
+4. Node.js is free and an open source server environment
+5. Node.js allows us to run JavaScript(JavaScript is a allrounder language) on the server.
+6. Node.js can run on mulitple OS
+
+
+Why Use Node.Js??
+1. You can use JavaScript in the entire Stack.
+2. Need to Learn only one programming language.
+3. Many famous companies use Node.Js as their backend
+4. NodeJs comes with a lot of useful built in modules
+5. Node.js is fast
+
