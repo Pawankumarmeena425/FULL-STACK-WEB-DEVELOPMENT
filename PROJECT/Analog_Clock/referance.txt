@@ -1,0 +1,24 @@
+****** For Hour Hand Calculation ******
+12 hour = 360 degree
+1 hour  =  360/12  = 30 degree
+
+1 hour  =  60 minutes =  30 degree
+1 minutes = 30/60 = 1/2 degree
+m minutes  m/2 degree
+
+ for hour hand : (30h+m/2)
+
+
+
+***********Minutes hand calculation ******
+60 minutes = 360 degree
+1 minutes = 6 degree
+m minutes = 6m degree
+-->> ignore changes due to seconds  
+
+
+******* For Seconds hand calculation ******
+60 seconds  =  360 degree
+1 seconds  =  6 degree
+s seconds  = 6s degree
+

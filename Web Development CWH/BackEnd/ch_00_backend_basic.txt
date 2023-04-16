@@ -18,3 +18,7 @@ Why Use Node.Js??
 4. NodeJs comes with a lot of useful built in modules
 5. Node.js is fast
 
+
+NOde.js  REPL -->>   Read Evaluate Print Loop
+-->> Through the underscore(_) we can access previous variables
+Note : enter Tab Button 2 times , for see globel variables , in the REPL
