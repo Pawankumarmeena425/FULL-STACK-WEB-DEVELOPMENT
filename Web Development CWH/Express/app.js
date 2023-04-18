@@ -8,19 +8,19 @@ const app = express(); // made app of express moudle
 const port = 80; // define port number ,
 const path  = require("path"); 
 
-// For Serving static files
+// For Serving static files  : static files ->> Static files are the files which we are kept in our website publiclly through the link everyone can download these files
 app.use('/static',express.static('static'));
 
 // Set the template engine as pug (pug is a template engine for node js)
-app.set('view engine', 'pug')
+app.set('view engine', 'pug');
 
 // Set the views directory
-app.set('views',paht.join(__dirname,'views'))
+app.set('views',path.join(__dirname,'views'));
 
 // Our pug demo endpoints
-app.get('/', (req, res) => {
+app.get('/demo', (req, res) => {
     res.status(200).render('demo', { title: 'Hey Harry', message: 'Hello there! and thans for teach me how to use pug' })
-  })
+  });
 
 app.get("/" , (req,res)=>{
     res.send("This is home page of my first express app with harry");
