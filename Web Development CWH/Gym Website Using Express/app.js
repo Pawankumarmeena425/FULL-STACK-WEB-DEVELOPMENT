@@ -7,9 +7,11 @@ const express = require('express'); //import express module
 const app = express(); // made app of express moudle
 const port = 80; // define port number ,
 const path  = require("path"); 
+const fs = require("fs");
 
 // For Serving static files  : static files ->> Static files are the files which we are kept in our website publiclly through the link everyone can download these files
 app.use('/static',express.static('static'));
+app.use(express.urlencoded());// it will help to feath data from website to Express
 
 // PUG SPECIFIC STUFF 
 app.set('view engine', 'pug');// Set the template engine as pug (pug is a template engine for node js)
@@ -25,6 +27,22 @@ app.set('views',path.join(__dirname,'views'));  // Set the views directory
     const params = {'title' : 'PubG is the best game' , 'content' : con}
     res.status(200).render('index.pug',params);
   });
+  app.post('/',(req,res)=>{
+    // console.log(req.body); // print all the deatils submited in the form on the console
+    // req.body give objects of the form and we can featch all the deatils from it
+     const name =  req.body.name;
+     const age =  req.body.age;
+     const gender=  req.body.gender;
+     const address =  req.body.address;
+     const more =  req.body.more;
+
+    //  store deatils in the file
+    let outputToWrite = `the name of the client is ${name} , ${age} year old , ${gender} , residing at ${address}. More about him/her ${more}`;
+    fs.writeFileSync('output.txt' , outputToWrite);
+    const params = {'message' : 'Your form has been submitted successfull' }
+    res.status(200).render('index.pug',params);
+  });
+
 
 
 
