@@ -11,28 +11,40 @@ const path  = require("path");
 // For Serving static files  : static files ->> Static files are the files which we are kept in our website publiclly through the link everyone can download these files
 app.use('/static',express.static('static'));
 
-// Set the template engine as pug (pug is a template engine for node js)
-app.set('view engine', 'pug');
+// PUG SPECIFIC STUFF 
+app.set('view engine', 'pug');// Set the template engine as pug (pug is a template engine for node js)
+app.set('views',path.join(__dirname,'views'));  // Set the views directory
 
-// Set the views directory
-app.set('views',path.join(__dirname,'views'));
+// END POINTS
 
-// Our pug demo endpoints
-app.get('/demo', (req, res) => {
+ app.get('/demo', (req, res) => {
     res.status(200).render('demo', { title: 'Hey Harry', message: 'Hello there! and thans for teach me how to use pug' })
+  }); 
+  app.get('/',(req,res)=>{
+    const con = "This is the best content on the internet so far so use it wisely!!"
+    const params = {'title' : 'PubG is the best game' , 'content' : con}
+    res.status(200).render('index.pug',params);
   });
 
-app.get("/" , (req,res)=>{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  app.get("/" , (req,res)=>{
     res.send("This is home page of my first express app with harry");
-});
-app.get("/about" , (req,res)=>{
-    res.send("This is about page of my first express app with harry");
-});
-app.get("/services" , (req,res)=>{
-    res.send("This is services page of my first express app with harry");
-});
-app.get("/contact" , (req,res)=>{
-    res.send("This is contact page of my first express app with harry");
 });
 app.post("/about" , (req,res)=>{
     res.send("This is post request of about page of my first express app with harry");
@@ -40,6 +52,11 @@ app.post("/about" , (req,res)=>{
 app.get("/this" , (req,res)=>{
     res.status(404).send("This page is not found on system");
 });
+*/
+
+
+
+// START THE SERVER
 app.listen(port , ()=>{
     console.log(`The application started successfully on port ${port}`)
 });
