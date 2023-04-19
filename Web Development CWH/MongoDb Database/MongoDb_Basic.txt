@@ -1,0 +1,4 @@
+MongoDb DataBase : 
+1. No SQL DataBase
+2. Document Oriented
+3 . Open-source , cross-platform , document-oriented database written in c++
