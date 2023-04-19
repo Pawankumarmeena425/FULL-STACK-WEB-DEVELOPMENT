@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+
+}
+#logo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#logo img{
+    height: 50px;
+    /* filter : invert(1) use to change backgroudn balck to white */
+    filter: invert(1);
+   
+}
+#navbar {
+    background-color: rgb(157, 157, 148);
+    padding: 18px 4px;
+}
+
+#navbar ul {
+    display: flex;
+ align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    font-size: 1.6rem;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#navbar li a:hover {
+    font-size: 1.8rem;
+    color: red;
+    background-color: pink;
+}
+
+#introSection {
+    background: center / cover no-repeat url("/static/bg1.jpg");
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-bottom: 100px;
+}
+
+#introSection div.small {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#missionSection {
+    height: 350px;
+}
+#missionSection h2 {
+    font-size: 3rem;
+}
+
+#missionSection {
+    text-align: center;
+    padding-top: 15px;
+    margin: auto;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    margin: 15px 23px;
+    height: 210px;
+    background-color: #faeded;
+
+}
+.card h3{
+    padding-bottom: 30px;
+    margin-top: 23px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img{
+    height: 100px;
+    padding: 0px 14px;
+}
+.card-img img{
+    height: inherit;
+}
+.card-content p{
+}
+#sponserSection {
+    height: 350px;
+    background-color: rgb(211, 109, 109);
+}
+
+#sponserSection h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+#sponsors{
+    height: 202px;
+    max-width: 1000px;
+    margin: auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+#footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

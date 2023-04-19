@@ -1,0 +1,25 @@
+//- Template Inheritance : 
+
+//- layout.pug
+doctype html
+html
+  head
+    title pawan dance academy
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src = "/static/img/logo.png")
+                | HDA
+            li #[a(href = "/") Home ]
+            li #[a(href = "/") About ]
+            li #[a(href = "/") Services ]
+            li #[a(href = "/") Contact Us ]
+            li #[a(href = "/") Class Info]
+    block content
+    footer#footer
+        | Copyright © 2019 PawanDanceAcedamy.com | All righs reserved   
+
+        //- navbar and footer will be remain constant in the all the pages , so we define this in the template

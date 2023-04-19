@@ -10,6 +10,7 @@ const path  = require("path");
 const fs = require("fs");
 
 // For Serving static files  : static files ->> Static files are the files which we are kept in our website publiclly through the link everyone can download these files
+//EXPRESS SPECIFIC STUFF 
 app.use('/static',express.static('static'));
 app.use(express.urlencoded());// it will help to feath data from website to Express
 
@@ -42,18 +43,6 @@ app.set('views',path.join(__dirname,'views'));  // Set the views directory
     const params = {'message' : 'Your form has been submitted successfull' }
     res.status(200).render('index.pug',params);
   });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
