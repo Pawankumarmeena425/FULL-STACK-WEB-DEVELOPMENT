@@ -7,8 +7,8 @@ async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/harryKart');
 
     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-}
 
+}
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error : '));
 db.once('open', function () {
@@ -36,7 +36,7 @@ const Kitten = mongoose.model('Kitten', kittySchema);  // convert Schema into mo
 
 const silence = new Kitten({ name: 'Silence' }); // create objects creating corrosponding to the modal
 console.log(silence.name); // 'Silence'
-silence.speak();
+// silence.speak();
 
 const pawanKitty = new Kitten({ name: 'pawan ' ,  decraption : 'this is a mongoose tutorial , and where we learn how to save objects in the Nodejs' });
 // decraption will not add , because we define Schema , and there we only set name : String format
@@ -48,6 +48,5 @@ pawanKitty.save();
 
  
 // how to find data from collection
-const kittens = Kitten.find({name : 'pawan'});
+const kittens =  Kitten.find({name : "pawan"});
 console.log(kittens);
-
